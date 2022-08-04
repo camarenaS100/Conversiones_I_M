@@ -52,11 +52,9 @@ g++ main.cc -o app/test -I ./lib/include -L ./lib/static -lconvimp
 
 + Biblioteca dinámica:
 
-ar crs ./lib/dynamic/libconvimp.so ./obj/*.o
+gcc -shared -o ./lib/dynamic/libconvimp.so ./obj/*.o
 
-g++ -c main.cc -o main.o 
-
-g++ -o  ./app/testd  main.o -L ./lib/dynamic -lconvimp
+g++ main.cc -o app/testd -I ./lib/include -L ./lib/dynamic -lconvimp
 
 ./app/testd
 
