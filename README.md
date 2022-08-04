@@ -9,6 +9,7 @@
 
                       2. Comandos usados para compilar las bibliotecas
 Crear los archivos .o de las funciones:
+
 g++ -c ./src/bbl_l.cc -o ./obj/bbl_l.o -I ./include 
 
 g++ -c ./src/chain.cc -o ./obj/chain.o -I ./include
@@ -42,14 +43,21 @@ g++ -c ./src/short_ton.cc -o ./obj/short_ton.o -I ./include
 g++ -c ./src/yard.cc -o ./obj/yard.o -I ./include 
 
 Biblioteca estática:
+
 ar crs ./lib/static/libconvimp.a ./obj/*.o 
+
 g++ main.cc -o app/test -I ./lib/include -L ./lib/static -lconvimp
+
 ./app/test 
 
 Biblioteca dinámica:
+
 ar crs ./lib/dynamic/libconvimp.so ./obj/*.o
+
 g++ -c main.cc -o main.o 
+
 g++ -o  ./app/testd  main.o -L ./lib/dynamic -lconvimp
+
 ./app/testd
 
                       3.Tutorial para usar la biblioteca :
