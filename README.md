@@ -42,7 +42,7 @@ g++ -c ./src/short_ton.cc -o ./obj/short_ton.o -I ./include
 
 g++ -c ./src/yard.cc -o ./obj/yard.o -I ./include 
 
-Biblioteca estática:
++ Biblioteca estática:
 
 ar crs ./lib/static/libconvimp.a ./obj/*.o 
 
@@ -50,7 +50,7 @@ g++ main.cc -o app/test -I ./lib/include -L ./lib/static -lconvimp
 
 ./app/test 
 
-Biblioteca dinámica:
++ Biblioteca dinámica:
 
 ar crs ./lib/dynamic/libconvimp.so ./obj/*.o
 
