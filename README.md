@@ -10,20 +10,35 @@
                       2. Comandos usados para compilar las bibliotecas
 Crear los archivos .o de las funciones:
 g++ -c ./src/bbl_l.cc -o ./obj/bbl_l.o -I ./include 
-g++ -c ./src/chain.cc -o ./obj/chain.o -I ./include 
-g++ -c ./src/foot.cc -o ./obj/foot.o -I ./include 
-g++ -c ./src/gal_l.cc -o ./obj/gal_l.o -I ./include 
-g++ -c ./src/grain.cc -o ./obj/grain.o -I ./include 
-g++ -c ./src/inch.cc -o ./obj/inch.o -I ./include 
-g++ -c ./src/large_ton.cc -o ./obj/large_ton.o -I ./include 
-g++ -c ./src/league.cc -o ./obj/league.o -I ./include  
-g++ -c ./src/mile.cc -o ./obj/mile.o -I ./include 
-g++ -c ./src/onz_m.cc -o ./obj/onz_m.o -I ./include 
-g++ -c ./src/onzl_ml.cc -o ./obj/onzl_ml.o -I ./include 
+
+g++ -c ./src/chain.cc -o ./obj/chain.o -I ./include
+
+g++ -c ./src/foot.cc -o ./obj/foot.o -I ./include
+
+g++ -c ./src/gal_l.cc -o ./obj/gal_l.o -I ./include
+
+g++ -c ./src/grain.cc -o ./obj/grain.o -I ./include
+
+g++ -c ./src/inch.cc -o ./obj/inch.o -I ./include
+
+g++ -c ./src/large_ton.cc -o ./obj/large_ton.o -I ./include
+
+g++ -c ./src/league.cc -o ./obj/league.o -I ./include
+
+g++ -c ./src/mile.cc -o ./obj/mile.o -I ./include
+
+g++ -c ./src/onz_m.cc -o ./obj/onz_m.o -I ./include
+
+g++ -c ./src/onzl_ml.cc -o ./obj/onzl_ml.o -I ./include
+
 g++ -c ./src/pint_ml.cc -o ./obj/pint_ml.o -I ./include 
+
 g++ -c ./src/pound.cc -o ./obj/pound.o -I ./include 
+
 g++ -c ./src/quart_l.cc -o ./obj/quart_l.o -I ./include 
+
 g++ -c ./src/short_ton.cc -o ./obj/short_ton.o -I ./include 
+
 g++ -c ./src/yard.cc -o ./obj/yard.o -I ./include 
 
 Biblioteca estática:
