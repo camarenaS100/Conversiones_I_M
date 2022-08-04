@@ -1,58 +1,13 @@
 # Conversiones_I_M
 
-1. Estructura de directorios (conseguido mediante tree)
-.
-├── I7final
-├── Libreriaconvimp
-│   ├── app
-│   │   ├── test
-│   │   └── testd
-│   ├── include
-│   │   └── convimp
-│   ├── lib
-│   │   ├── dynamic
-│   │   │   └── libconvimp.so
-│   │   └── static
-│   │       └── libconvimp.a
-│   ├── main.cc
-│   ├── main.o
-│   ├── obj
-│   │   ├── bbl_l.o
-│   │   ├── chain.o
-│   │   ├── foot.o
-│   │   ├── gal_l.o
-│   │   ├── grain.o
-│   │   ├── inch.o
-│   │   ├── large_ton.o
-│   │   ├── league.o
-│   │   ├── mile.o
-│   │   ├── onz_m.o
-│   │   ├── onzl_ml.o
-│   │   ├── pint_ml.o
-│   │   ├── pound.o
-│   │   ├── quart_l.o
-│   │   ├── short_ton.o
-│   │   └── yard.o
-│   └── src
-│       ├── bbl_l.cc
-│       ├── chain.cc
-│       ├── foot.cc
-│       ├── gal_l.cc
-│       ├── grain.cc
-│       ├── inch.cc
-│       ├── large_ton.cc
-│       ├── league.cc
-│       ├── mile.cc
-│       ├── onz_m.cc
-│       ├── onzl_ml.cc
-│       ├── pint_ml.cc
-│       ├── pound.cc
-│       ├── quart_l.cc
-│       ├── short_ton.cc
-└──     └── yard.cc
+                      1. Estructura de directorios (conseguido mediante tree)
 
-Comandos usados para compilar las bibliotecas
 
+
+![Captura de pantalla 2022-08-03 a la(s) 20 01 17](https://user-images.githubusercontent.com/66481799/182740744-df13eda8-f641-4dee-bd09-e72a958afb68.png)
+
+
+                      2. Comandos usados para compilar las bibliotecas
 Crear los archivos .o de las funciones:
 g++ -c ./src/bbl_l.cc -o ./obj/bbl_l.o -I ./include 
 g++ -c ./src/chain.cc -o ./obj/chain.o -I ./include 
@@ -82,9 +37,11 @@ g++ -c main.cc -o main.o
 g++ -o  ./app/testd  main.o -L ./lib/dynamic -lconvimp
 ./app/testd
 
-3. Tutorial para usar la biblioteca :
+                      3.Tutorial para usar la biblioteca :
   a.- Agregar el archivo de c++ que usará la biblioteca en el mismo directorio de I7final
+  
   b.- Escribes ( #include "convimp" ) en el archivo de c++ al que quieras agregar la biblioteca en la cabecera.
+  
   c.- Llamas a las funciones y mandas los argumentos necesarios.
   
 Las funciones y su uso documentado se encuentran en /include/convimp
