@@ -3,8 +3,8 @@
                       1. Estructura de directorios (conseguido mediante tree)
 
 
+![Listo](https://user-images.githubusercontent.com/66481799/182976084-b2eaa95c-4c10-4dec-bfd7-7482898c55fd.png)
 
-![Captura de pantalla 2022-08-03 a la(s) 20 01 17](https://user-images.githubusercontent.com/66481799/182740744-df13eda8-f641-4dee-bd09-e72a958afb68.png)
 
 
                       2. Comandos usados para compilar las bibliotecas
