@@ -1,11 +1,15 @@
 # Conversiones_I_M
 
-                      1. Estructura de directorios (conseguido mediante tree)
+                      1. Propósito de la biblioteca
+Ésta biblioteca convierte unidades del sistema imperial anglosajón a unidades del sistema métrico, especificamente de :
+
+    -   
+                      2. Estructura de directorios (conseguido mediante tree)
 
 ![Captura de pantalla 2022-08-19 a la(s) 14 14 06](https://user-images.githubusercontent.com/66481799/185690970-fa1680cf-49a7-45b6-a067-51d9f0df8f35.png)
 
 
-                      2. Comandos usados para compilar las bibliotecas
+                      3. Comandos usados para compilar las bibliotecas
 Crear los archivos .o de las funciones:
 
 g++ -c ./src/bbl_l.cc -o ./obj/bbl_l.o -I ./include 
@@ -56,9 +60,12 @@ g++ main.cc -o app/testd -I ./lib/include -L ./lib/dynamic -lconvimp
 
 ./app/testd
 
-                      3.Tutorial para usar la biblioteca :
-  a.- Agregar el archivo de c++ que usará la biblioteca en el mismo directorio del 
-  a.- Agregar el archivo de c++ que usará la biblioteca en el mismo directorio del 
+                      4.Tutorial para usar la biblioteca :
+  a.- Agregar al directorio de tu archivo de c++ que usará la biblioteca, la carpeta que contiene la estructura de directorios de Conversiones_I_M y dependiendo de dónde lo pongas, acomodar la ruta correspondiente en la cabecera include de tu archivo c++. 
+ 
+ b.- Para invocar las funciones solo usas la sintaxis de cada función:
+ 
+ double onzl_ml(double& a);
   
   b.- Escribes ( #include "convimp" ) en el archivo de c++ al que quieras agregar la biblioteca en la cabecera.
   
