@@ -112,7 +112,7 @@ Aquí hay ejemplos para :
    ![carbon (5)](https://user-images.githubusercontent.com/66481799/185765890-812607fa-b0b8-4ac7-b954-8dec73e987aa.png)
                    
                    
-                      Volumen Líquidos
+                      Volumen de líquidos
 
 ![carbon (7)](https://user-images.githubusercontent.com/66481799/185765946-e03630e9-e46c-4811-8f69-b4ec8724b29c.png)
 
