@@ -99,18 +99,20 @@ g++ -o lib\dynamic\dynamic main.o -I .\lib\include -L .\lib\dynamic -lconvimp
 
 
                       4. Tutorial para usar la biblioteca :
-  a.- Agregar al directorio de tu archivo de c++ que usará la biblioteca, la carpeta que contiene la estructura de directorios de Conversiones_I_M y dependiendo de dónde lo pongas, acomodar la ruta correspondiente en la cabecera include de tu archivo c++. 
+  a.- Agregar al directorio de tu archivo de c++ que usará la biblioteca, la carpeta que contiene la estructura de directorios de Conversiones_I_M y dependiendo de dónde lo pongas, acomodar la ruta correspondiente en la cabecera include de tu archivo c++. Aquí hay ejemplos para : 
  
                       Masa
- ![carbon](https://user-images.githubusercontent.com/66481799/185727962-885facb7-a018-455f-948e-c03bbfa6ea76.png)
  
- 
-                      Longitud  
-![carbon (1)](https://user-images.githubusercontent.com/66481799/185728047-0d674c68-373c-42a5-bd38-0cc4e4bbeae7.png)
-                      
-                   
-                      Volumen
-![carbon (2)](https://user-images.githubusercontent.com/66481799/185728586-8aebe655-dd4d-46e9-9c93-5a8e3b026d84.png)
+![carbon (6)](https://user-images.githubusercontent.com/66481799/185765919-f22b43f0-40e7-4a72-af24-ef5f9c279441.png)
 
+
+                      Longitud  
+
+   ![carbon (5)](https://user-images.githubusercontent.com/66481799/185765890-812607fa-b0b8-4ac7-b954-8dec73e987aa.png)
+                   
+                   
+                      Volumen Líquidos
+
+![carbon (7)](https://user-images.githubusercontent.com/66481799/185765946-e03630e9-e46c-4811-8f69-b4ec8724b29c.png)
 
   
