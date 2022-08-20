@@ -103,7 +103,8 @@ g++ main.cc -o app/testd -I ./lib/include -L ./lib/dynamic -lconvimp
                       4. Tutorial para usar la biblioteca :
   a.- Agregar al directorio de tu archivo de c++ que usará la biblioteca, la carpeta que contiene la estructura de directorios de Conversiones_I_M y dependiendo de dónde lo pongas, acomodar la ruta correspondiente en la cabecera include de tu archivo c++. 
  
- b.- Para invocar las funciones solo usas la sintaxis de cada función:
-Ejemplos : 
+                      Masa
+                      ![carbon](https://user-images.githubusercontent.com/66481799/185727962-885facb7-a018-455f-948e-c03bbfa6ea76.png)
+
 
   
