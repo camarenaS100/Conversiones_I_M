@@ -48,66 +48,68 @@
 
 ![Captura de pantalla 2022-08-19 a la(s) 14 14 06](https://user-images.githubusercontent.com/66481799/185690970-fa1680cf-49a7-45b6-a067-51d9f0df8f35.png)
 
+                        Crear los archivos objetos de cada función
+gcc -fPIC -c .\src\bbl_l.cc -o .\obj\bbl_l.o -I .\include
 
-                      ##3. Comandos usados para compilar las bibliotecas
-Crear los archivos .o de las funciones:
+gcc -fPIC -c .\src\chain.cc -o .\obj\chain.o -I .\include
 
-g++ -c ./src/bbl_l.cc -o ./obj/bbl_l.o -I ./include 
+gcc -fPIC -c .\src\foot.cc -o .\obj\foot.o -I .\include
 
-g++ -c ./src/chain.cc -o ./obj/chain.o -I ./include
+gcc -fPIC -c .\src\gal_l.cc -o .\obj\gal_l.o -I .\include
 
-g++ -c ./src/foot.cc -o ./obj/foot.o -I ./include
+gcc -fPIC -c .\src\grain.cc -o .\obj\grain.o -I .\include
 
-g++ -c ./src/gal_l.cc -o ./obj/gal_l.o -I ./include
+gcc -fPIC -c .\src\inch.cc -o .\obj\inch.o -I .\include
 
-g++ -c ./src/grain.cc -o ./obj/grain.o -I ./include
+gcc -fPIC -c .\src\large_ton -o .\obj\large_ton.o -I .\include
 
-g++ -c ./src/inch.cc -o ./obj/inch.o -I ./include
+gcc -fPIC -c .\src\league.cc -o .\obj\league.o -I .\include
 
-g++ -c ./src/large_ton.cc -o ./obj/large_ton.o -I ./include
+gcc -fPIC -c .\src\mile.cc -o .\obj\mile.o -I .\include
 
-g++ -c ./src/league.cc -o ./obj/league.o -I ./include
+gcc -fPIC -c .\src\onz_m.cc -o .\obj\onz_m.o -I .\include
 
-g++ -c ./src/mile.cc -o ./obj/mile.o -I ./include
+gcc -fPIC -c .\src\onzl_ml.cc -o .\obj\onzl_ml.o -I .\include
 
-g++ -c ./src/onz_m.cc -o ./obj/onz_m.o -I ./include
+gcc -fPIC -c .\src\pint_ml.cc -o .\obj\pint_ml.o -I .\include
 
-g++ -c ./src/onzl_ml.cc -o ./obj/onzl_ml.o -I ./include
+gcc -fPIC -c .\src\pound.cc -o .\obj\pound.o -I .\include
 
-g++ -c ./src/pint_ml.cc -o ./obj/pint_ml.o -I ./include 
+gcc -fPIC -c .\src\quart.cc -o .\obj\quart.o -I .\include
 
-g++ -c ./src/pound.cc -o ./obj/pound.o -I ./include 
+gcc -fPIC -c .\src\short_ton.cc -o .\obj\short_ton.o -I .\include
 
-g++ -c ./src/quart_l.cc -o ./obj/quart_l.o -I ./include 
+gcc -fPIC -c .\src\yard.cc -o .\obj\yard.o -I .\include
 
-g++ -c ./src/short_ton.cc -o ./obj/short_ton.o -I ./include 
+                        Biblioteca estática
+ar crs .\lib\static\convimp.lib .\obj\*.o
 
-g++ -c ./src/yard.cc -o ./obj/yard.o -I ./include 
+g++ main.cc -o app\static -I .\lib\include -L .\lib\static -lconvimp
 
-+ Biblioteca estática:
+./app/static.exe
 
-ar crs ./lib/static/libconvimp.a ./obj/*.o 
+                        Biblioteca dinámica
+g++ -shared -o .\lib\dynamic\libconvimp.dll .\obj\*.o
 
-g++ main.cc -o app/test -I ./lib/include -L ./lib/static -lconvimp
+g++ -c main.cc 
 
-./app/test 
+g++ -o lib\dynamic\dynamic main.o -I .\lib\include -L .\lib\dynamic -lconvimp
 
-+ Biblioteca dinámica:
+./lib/dynamic/dynamic.exe
 
-gcc -shared -o ./lib/dynamic/libconvimp.so ./obj/*.o
-
-g++ main.cc -o app/testd -I ./lib/include -L ./lib/dynamic -lconvimp
-
-./app/testd
 
                       4. Tutorial para usar la biblioteca :
   a.- Agregar al directorio de tu archivo de c++ que usará la biblioteca, la carpeta que contiene la estructura de directorios de Conversiones_I_M y dependiendo de dónde lo pongas, acomodar la ruta correspondiente en la cabecera include de tu archivo c++. 
  
                       Masa
  ![carbon](https://user-images.githubusercontent.com/66481799/185727962-885facb7-a018-455f-948e-c03bbfa6ea76.png)
-
+ 
+ 
+                      Longitud  
 ![carbon (1)](https://user-images.githubusercontent.com/66481799/185728047-0d674c68-373c-42a5-bd38-0cc4e4bbeae7.png)
-
+                      
+                   
+                      Volumen
 ![carbon (2)](https://user-images.githubusercontent.com/66481799/185728586-8aebe655-dd4d-46e9-9c93-5a8e3b026d84.png)
 
 
