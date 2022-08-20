@@ -106,5 +106,9 @@ g++ main.cc -o app/testd -I ./lib/include -L ./lib/dynamic -lconvimp
                       Masa
  ![carbon](https://user-images.githubusercontent.com/66481799/185727962-885facb7-a018-455f-948e-c03bbfa6ea76.png)
 
+![carbon (1)](https://user-images.githubusercontent.com/66481799/185728047-0d674c68-373c-42a5-bd38-0cc4e4bbeae7.png)
+
+![carbon (2)](https://user-images.githubusercontent.com/66481799/185728586-8aebe655-dd4d-46e9-9c93-5a8e3b026d84.png)
+
 
   
