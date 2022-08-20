@@ -99,7 +99,7 @@ g++ -o lib\dynamic\dynamic main.o -I .\lib\include -L .\lib\dynamic -lconvimp
 
 
                       4. Tutorial para usar la biblioteca :
-  a.- Agregar al directorio de tu archivo de c++ que usará la biblioteca, la carpeta que contiene la estructura de directorios de Conversiones_I_M y dependiendo de dónde lo pongas, acomodar la ruta correspondiente en la cabecera include de tu archivo c++. Nota : para las medidas de masa y longitud debes usar tipo de dato float y para volumenes double.
+  a.- Agregar al directorio de tu archivo de c++ que usará la biblioteca, la carpeta que contiene la estructura de directorios de Conversiones_I_M y dependiendo de dónde lo pongas, acomodar la ruta correspondiente en la cabecera include de tu archivo c++. Nota : para las medidas de masa y longitud debes usar tipo de dato float y para volúmenes líquidos double.
 Aquí hay ejemplos para : 
  
                       Masa
