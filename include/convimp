@@ -1,0 +1,117 @@
+#if !defined(CONVIMP)
+#define CONVIMP
+//MB                                            MB
+/** @brief Multiplies a by the const 29.5735
+ * @param a A double
+ * @returns a
+ * @author 2213026363
+ */
+double onzl_ml(double& a);
+
+/** @brief Multiplies a by the const 473.176
+ * @param a A double
+ * @returns a
+ * @author 2213026363
+ */
+double pint_ml(double& a);
+
+/** @brief Multiplies a by the const 0.946353 
+ * @param a A double
+ * @returns a
+ * @author 2213026363
+ */
+double quart_l(double& a);
+
+/** @brief Multiplies a by the const 3.78541
+ * @param a A double
+ * @returns a
+ * @author 2213026363
+ */
+double gal_l(double& a);
+
+/** @brief Multiplies a by the const 158.99
+ * @param a A double
+ * @returns a
+ * @author 2213026363
+ */
+double bbl_l(double& a);
+//SB                                            SB
+/** @brief converts inches to centimeters
+* @param a the value in inches multiplied a by 2.54
+* @returns a
+* @author 2213026167
+*/
+float inch(const float& a);
+
+/** @brief converts feets to centimeters
+* @param a the value in feets multiplied by 30.48
+* @returns a
+* @author 2213026167
+*/
+float foot(const float& a);
+
+/** @brief converts yards to centimeters
+* @param a the value in yards multiplied a by 91.44 
+* @returns a
+* @author 2213026167
+*/
+float yard(const float& a);
+
+/** @brief converts chains to meters
+* @param a the value in chains multiplied a by 20.1168 
+* @returns a
+* @author 2213026167
+*/
+float chain(const float& a);
+
+  /** @brief converts miles to kilometers
+  * @param a the value in miles multiplied a by 1.60934
+  * @returns a
+  * @author 2213026167
+  */
+float mile(const float& a);
+
+/** @brief converts leagues to kilometers
+  * @param a the value in yards multiplied a by 1.60934
+  * @returns a
+  * @author 2213026167
+  */
+float league(const float& a);
+
+//SC                                            SC  
+/** @brief Converts grain to miligrams
+ * @param x The value in grains
+ * @returns z  - The value in miligrams
+ * @author 2213026309 
+ */
+float gr(const float& x);
+
+/** @brief Converts ounces to grams
+ * @param x The value in ounces
+ * @returns z  - The value in grams
+ * @author 2213026309
+ */
+float oz(const float& x);
+
+/** @brief Converts pounds to grams
+ * @param x The value in pounds
+ * @returns z  - The value in grams
+ * @author 2213026309
+ */
+float lb(const float& x);
+
+/** @brief Converts US tons to kilograms
+ * @param x The value in US tons
+ * @returns z  - The value in kilograms
+ * @author 2213026309
+ */
+float uston(const float& x);
+
+/** @brief Converts UK tons to kilograms
+ * @param x The value in UK tons
+ * @returns z  - The value in kilograms
+ * @author 2213026309
+ */
+float ukton(const float& a);
+
+#endif
